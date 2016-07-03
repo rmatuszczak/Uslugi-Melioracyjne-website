@@ -1,0 +1,199 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+header{
+	background: #303030;
+	width: 100%;
+	padding:20px 0;
+	color: white;
+	text-align: center;
+}
+a{
+	color: inherit;
+}
+
+
+nav ul{
+	background-color: #3498db;
+	overflow: hidden;
+	color: white;
+	padding: 0;
+	text-align: center;
+	margin: 0;
+	-webkit-transition: max-height 0.5s;
+	-ms-transition: max-height 0.5s;
+	-moz-transition: max-height 0.5s;
+	-o-transition: max-height 0.5s;
+	transition: max-height 0.5s;
+}
+
+
+
+/* Shutter Out Vertical */
+nav ul li {
+	padding: 30px;
+	font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  background: #3498db;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+nav ul li:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: grey;
+	color:
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+nav ul li:hover, nav ul li:focus, nav ul li:active {
+  color: white;
+}
+nav ul li:hover:before, nav ul li:focus:before, nav ul li:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+section{
+	line-height: 1.5em;
+	font-size: 1em;
+	padding: 50px;
+	width: 50%;
+	margin: 0 auto;
+	min-height:300px;
+}
+.menu{
+	width: 100%;
+	background: #505050;
+	box-sizing: border-box;
+	padding: 15px 10px;
+	cursor: pointer;
+	color: white;
+	display: none;
+}
+#footer{
+	background-color: #303030;
+	text-align: center;
+	min-height: 200px;
+}
+
+#map-canvas
+{
+    width: 100%;
+    height: 400px;
+ }
+#map{
+
+	width:100%;
+}
+
+
+
+@media screen and (max-width: 690px){
+	nav ul{max-height: 0px;
+	}
+	.present{
+		max-height: 20em;
+	}
+	nav ul li{
+		box-sizing: border-box;
+		width:100%;
+		padding: 15px;
+	}
+	.menu{
+			display:block;
+		}
+	header{
+		font-size: 50%;
+		padding:5px;
+	}
+
+	section{
+		width:85%;
+		padding: 0px;
+		text-align: justify;
+	}
+	#footer{
+		min-height:0px;
+		height: 100%;
+	}
+	#map-canvas {
+		height: 300px;
+	}
+}
+
+
+/* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 22 css */
+        /*
+        .jssora22l                  (normal)
+        .jssora22r                  (normal)
+        .jssora22l:hover            (normal mouseover)
+        .jssora22r:hover            (normal mouseover)
+        .jssora22l.jssora22ldn      (mousedown)
+        .jssora22r.jssora22rdn      (mousedown)
+        */
+        .jssora22l, .jssora22r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url('img/a22.png') center center no-repeat;
+            overflow: hidden;
+        }
+        .jssora22l { background-position: -10px -31px; }
+        .jssora22r { background-position: -70px -31px; }
+        .jssora22l:hover { background-position: -130px -31px; }
+        .jssora22r:hover { background-position: -190px -31px; }
+        .jssora22l.jssora22ldn { background-position: -250px -31px; }
+        .jssora22r.jssora22rdn { background-position: -310px -31px; }
