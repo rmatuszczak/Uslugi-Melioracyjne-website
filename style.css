@@ -12,11 +12,19 @@ header{
 }
 a{
 	color: inherit;
+	text-decoration: none;
 }
 
 
+
 nav ul{
-	background-color: #3498db;
+	/*gradient*/
+	background: #3498db; /* For browsers that do not support gradients */
+	 background: -webkit-linear-gradient(#1276ba, #3498db); /* For Safari 5.1 to 6.0 */
+	 background: -o-linear-gradient(#1276ba, #3498db); /* For Opera 11.1 to 12.0 */
+	 background: -moz-linear-gradient(#1276ba, #3498db); /* For Firefox 3.6 to 15 */
+	 background: linear-gradient(#1276ba, #3498db); /* Standard syntax */
+	 	/*gradient THE END*/
 	overflow: hidden;
 	color: white;
 	padding: 0;
@@ -44,7 +52,13 @@ nav ul li {
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  background: #3498db;
+	/*gradient*/
+	background: #3498db; /* For browsers that do not support gradients */
+	 background: -webkit-linear-gradient(#1276ba, #3498db); /* For Safari 5.1 to 6.0 */
+	 background: -o-linear-gradient(#1276ba, #3498db); /* For Opera 11.1 to 12.0 */
+	 background: -moz-linear-gradient(#1276ba, #3498db); /* For Firefox 3.6 to 15 */
+	 background: linear-gradient(#1276ba, #3498db); /* Standard syntax */
+		/*gradient THE END*/
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.4s;
@@ -58,7 +72,7 @@ nav ul li:before {
   bottom: 0;
   left: 0;
   right: 0;
-  background: grey;
+  background: #3498db;
 	color:
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
@@ -89,6 +103,7 @@ section{
 .menu{
 	width: 100%;
 	background: #505050;
+	font-weight: bold;
 	box-sizing: border-box;
 	padding: 15px 10px;
 	cursor: pointer;
@@ -97,9 +112,52 @@ section{
 }
 #footer{
 	background-color: #303030;
-	text-align: center;
 	min-height: 200px;
+
 }
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	padding: 1em 0;
+  text-align: center;
+	color: #b1b1b1;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%;}
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 696px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+.hover-effects{
+	display:inline-block;
+	transition: all 0.5s;
+}
+.hover-effects:hover{
+	color: white;
+}
+
 
 #map-canvas
 {
@@ -145,6 +203,10 @@ section{
 		height: 300px;
 	}
 }
+.demo-icon{
+	color: red;
+}
+
 
 
 /* jssor slider bullet navigator skin 05 css */
