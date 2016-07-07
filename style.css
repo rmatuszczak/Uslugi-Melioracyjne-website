@@ -4,11 +4,33 @@ body{
 	font-family: 'Roboto', sans-serif;
 }
 header{
-	background: #303030;
+	background-image: url("images/blackwood.jpg");
+	background-size: cover;
+	background-position: center;
 	width: 100%;
-	padding:20px 0;
-	color: white;
-	text-align: center;
+	padding:10px 10px;
+
+
+}
+#title{
+	display: inline-block;
+	border-style: solid;
+	border-color: #fff;
+	border-radius: 5px;
+	padding:5px;
+	 color: #fff;
+}
+#images-wrapper{
+	display:inline-block;
+	margin-left: 10%;
+	max-width: 400px;
+}
+
+.images{
+	height: 50px;
+	padding: 10px;
+	border-bottom: solid;
+	border-color: red;
 }
 a{
 	color: inherit;
@@ -102,7 +124,7 @@ section{
 }
 .menu{
 	width: 100%;
-	background: #505050;
+	background: #303030;
 	font-weight: bold;
 	box-sizing: border-box;
 	padding: 15px 10px;
@@ -111,8 +133,14 @@ section{
 	display: none;
 }
 #footer{
-	background-color: #303030;
+	background-color: #202020;
 	min-height: 200px;
+
+}
+#footer-content{
+	width:60%;
+	margin-left: 20%;
+	margin-right: 20%;
 
 }
 
@@ -199,6 +227,10 @@ section{
 		min-height:0px;
 		height: 100%;
 	}
+	.images{
+	 height: 30px;
+
+	}
 	#map-canvas {
 		height: 300px;
 	}
@@ -207,6 +239,21 @@ section{
 	color: red;
 }
 
+@media only screen and (max-width: 1350px){
+header{
+	text-align: center;
+}
+	#title{
+		display: block;
+		margin:auto;
+		width:80%;
+	}
+	#images-wrapper{
+		display:block;
+		margin: auto;
+		max-width: 400px;
+	}
+}
 
 
 /* jssor slider bullet navigator skin 05 css */
